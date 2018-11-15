@@ -33,4 +33,3 @@ Msg 'Backup config files'
 find $Path -type f -name "*${TIME}.tar.gz"|xargs md5sum > $Path/flag\
 _$TIME 2> /dev/null
 Msg 'Make a flag for backup'
-
