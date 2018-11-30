@@ -1,5 +1,5 @@
 #!/bin/bash
-#read something,and determine whether the input is an integer. 
+#read something,and judge whether the input is an integer. 
 
 function exprTest()
 {
