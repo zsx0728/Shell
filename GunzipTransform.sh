@@ -12,7 +12,7 @@ Log="/usr/local/FileTrans.log"
 #collect the FileName of sql.gz
 find $SqlgzDir -name *.sql.gz > $FileNameList
 
-#calculate the number of gzip files.
+#calculate the number of files.
 FileNum=`cat $FileNameList|wc -l`
 echo -e "the filename list's location is $FileNameList,the file number is $FileNum.\nDo you want to begin to transform the *.sql.gz to *.sql?\nplease input the number:"
 
