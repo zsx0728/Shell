@@ -1,5 +1,5 @@
 #!/bin/bash
-#find the file name like *.sql.gz and gzip it like *.sql
+#find the file name like *.sql.gz and gunzip it like *.sql
 SqlgzDir="/usr/local/src"
 FileNameList="/usr/local/sqlFileName.txt"
 Log="/usr/local/FileTrans.log"
