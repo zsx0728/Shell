@@ -1,3 +1,2 @@
-# hello-world
-let's start git!
-今天第一次尝试git，重要的是持之以恒。
+# hello-world  
+这里记录了我的部分shell练习。
