@@ -9,6 +9,18 @@ output_file1='/root/most_visit_ip.txt'
 output_file2='/root/wait_for_investigation.txt'
 output_file3='/root/final.txt'
 
+[ -e $output_file1 ] && {
+    rm -f $output_file1
+}
+
+[ -e $output_file2 ] && {
+    rm -f $output_file2
+}
+
+[ -e $output_file3 ] && {
+    rm -f $output_file3
+}
+
 /usr/bin/awk -F "[ ^]" '{print $2}' $1 |/usr/bin/sort|/usr/bin/uniq -c |/usr/bin/sort -t ' ' -nr -k 2 > $output_file1            
 /usr/bin/awk -F "[ ^]" '{print $2,$10}' $1 |/usr/bin/grep -v ' 403$'|/usr/bin/sort|/usr/bin/uniq -c |/usr/bin/sort -t ' ' -nr -k 2 > $output_file2  
 
